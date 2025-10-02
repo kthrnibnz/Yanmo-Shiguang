@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: white;
+
 }
 
 .navbar {
@@ -125,6 +126,7 @@ body {
   flex: 1;
 }
 
+
 /* FOOTER */
 .footer-main-bg {
   background-color: #2e5634;
@@ -217,8 +219,14 @@ footer a {
 .footer-row {
   margin-left: -25px; 
 }
-
 @media (max-width: 768px) {
+    footer {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;  
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
   .nav-links {
     display: none; 
     flex-direction: column;
@@ -243,21 +251,45 @@ footer a {
   .menu-btn {
     margin: 0;
   }
+  /* Footer fix */
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: -35px;
 }
 
-  .footer-container {
-    text-align: center;
-    justify-items: center;
-  }
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  margin: auto;
+  margin-left: -10px;
+  gap: 1.5rem;
+  width: 100%;         
+  box-sizing: border-box; 
+}
 
-  .footer-logo {
-    margin: 0 auto;
-  }
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto 1rem;
+  display: block;
+}
 
-  .social-icons {
-    justify-content: center;
-  }
+.footer-text,
+.footer-bottom {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
 
-  .footer-bottom {
-    text-align: center;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
   }
