@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Themed Coffee Tastings</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="taste.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo/white-logo.png" alt="研磨时光 Logo" height="40">
+      </div>
+
+      <!-- Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="home.html#story">Our Story</a>
+        <a href="#find">Find Us</a>
+        <button class="menu-btn"><a href="menu.html">Menu</a></button>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-overlay-box">
+        <h1>Themed Coffee Tastings</h1>
+        <p>
+          A guided tasting session where customers sample 3–4 different coffee blends (single origin, seasonal, or specialty drinks). Includes short lessons on brewing methods.
+        </p>
+
+        <div class="info-stacked">
+          <div class="info-item">
+            <h5>☕ When:</h5>
+            <p>Twice a semester (aligned with new menu launches)</p>
+          </div>
+          <div class="info-item">
+            <h5>⏰ Time:</h5>
+            <p>4:00 PM – 6:00 PM</p>
+          </div>
+          <div class="info-item">
+            <h5>🎉 Special Offer:</h5>
+            <p>$3.50 tasting fee (includes all samples + a voucher for 20% off their favorite blend).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Footer -->
+  <footer id="find">
+    <div class="footer-main-bg">
+      <div class="footer-row">
+        <div><img src="logo/footer.png" alt="研磨时光 Logo" class="footer-logo"></div>
+        <div class="footer-text">
+          <h6><strong>Main Branch</strong></h6>
+          <p>714 Earnshaw St, Sampaloc, Manila<br>1008 Metro Manila</p>
+          <a href="https://www.google.com/maps/place/714+Earnshaw+St,+Sampaloc,+Manila,+1008+Metro+Manila/@14.6064857,120.9921005,18z/data=!3m1!4b1!4m6!3m5!1s0x3397c9fdd5892f2f:0xc4dd45fc24994043!8m2!3d14.6064857!4d120.993388!16s%2Fg%2F11nnkzvt0b?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" class="footer-directions" class="footer-directions"><strong>Directions →</strong></a>
+        </div>
+        <div class="footer-text">
+          <h6><strong>Phone Number</strong></h6>
+          <p>0908-266-0908</p>
+          <h6><strong>Email Address</strong></h6>
+          <p>yanmo.xiguang@kafei.com</p>
+        </div>
+        <div>
+          <h6><strong>Follow Us!</strong></h6>
+          <div class="social-icons">
+             <a href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/en/"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small><strong>Made by Yanmo Shiguang Café ©2025 All Rights Reserved.</strong></small>
+    </div>
+  </footer>
+
+  <!-- Nav Toggle Script -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
